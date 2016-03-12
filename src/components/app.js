@@ -10,7 +10,7 @@ import { brandNames, brandClasses } from '../../custom';
 let slugger = new GithubSlugger();
 let slug = title => { slugger.reset(); return slugger.slug(title); };
 
-let languageOptions = ['cURL', 'CLI', 'Python', 'JavaScript'];
+let languageOptions = ['cURL'];
 
 let debouncedReplaceState = debounce(hash => {
   window.history.replaceState('', '', hash);
