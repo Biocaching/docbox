@@ -12,5 +12,13 @@ var fs = require('fs');
 module.exports =
   '# Introduction\n' +
   fs.readFileSync('./content/introduction.md', 'utf8') + '\n' +
-  '# Example\n' +
-  fs.readFileSync('./content/example.md', 'utf8') + '\n';
+  '# API Status\n' +
+  fs.readFileSync('./content/status.md', 'utf8') + '\n' +
+  '#Users\n' +
+  fs.readFileSync('./content/user.md', 'utf8') + '\n' +
+  '# Observations\n' +
+  fs.readFileSync('./content/observation.md', 'utf8') + '\n' +
+  '# Taxa\n' +
+  fs.readFileSync('./content/taxa.md', 'utf8') + '\n' +
+  '# Collections\n' +
+  fs.readFileSync('./content/collection.md', 'utf8') + '\n';
